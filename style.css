@@ -1,0 +1,340 @@
+/* Reset Básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #f4f6f9;
+    color: #333;
+}
+
+/* 1. Cabeçalho */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+}
+
+.nav-menu a:hover {
+    color: #007bff;
+}
+
+/* Botões Globais */
+.btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: #007bff;
+    border: 1px solid #007bff;
+    padding: 0.6rem 1.2rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-secondary:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* 2. Área de destaque (Hero) */
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem 2rem;
+    gap: 2rem;
+    max-inline-size: 1200px;
+    margin: 0 auto;
+}
+
+.hero-left {
+    flex: 1;
+}
+
+.hero-left h1 {
+    font-size: 2.5rem;
+    margin-block-end: 1rem;
+    color: #1a252f;
+}
+
+.hero-left p {
+    font-size: 1.1rem;
+    margin-block-end: 1.5rem;
+    color: #666;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.hero-right {
+    flex: 1;
+}
+
+.image-placeholder {
+    inline-size: 100%;
+    block-size: 250px;
+    background-color: #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    font-weight: bold;
+    color: #666;
+}
+
+/* 3. Categorias */
+.categories-section {
+    text-align: center;
+    padding: 3rem 2rem;
+    background-color: #ffffff;
+}
+
+.categories-section h2 {
+    margin-block-end: 1.5rem;
+}
+
+.categories-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.category-card {
+    background-color: #eef2f7;
+    padding: 0.8rem 1.5rem;
+    border-radius: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.category-card:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* 4 e 5. Cursos disponíveis */
+.courses-section {
+    padding: 3rem 2rem;
+    max-inline-size: 1200px;
+    margin: 0 auto;
+}
+
+.courses-section h2 {
+    text-align: center;
+    margin-block-end: 2rem;
+}
+
+.courses-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+/* 6. Estilização e interação dos Cards */
+.course-card {
+    background-color: #fff;
+    inline-size: 260px;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra padrão */
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.course-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra mais evidente no :hover */
+}
+
+.course-card h3 {
+    font-size: 1.2rem;
+    margin-block-end: 0.5rem;
+}
+
+.course-card p {
+    font-size: 0.9rem;
+    color: #666;
+    margin-block-end: 1rem;
+}
+
+.card-info {
+    display: flex;
+    justify-content: space-between; /* Flexbox interno para alinhar nas pontas opostas */
+    font-size: 0.85rem;
+    font-weight: bold;
+    color: #888;
+    margin-block-end: 1rem;
+    padding-block-start: 0.5rem;
+    border-block-start: 1px solid #eee;
+}
+
+.btn-card {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    inline-size: 100%;
+    transition: background-color 0.3s;
+}
+
+.btn-card:hover {
+    background-color: #218838;
+}
+
+/* 7. Área de benefícios */
+.benefits-section {
+    background-color: #ffffff;
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+.benefits-section h2 {
+    margin-block-end: 2rem;
+}
+
+.benefits-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+    max-inline-size: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.benefit-card {
+    flex: 1;
+    min-inline-size: 220px;
+    display: flex;
+    flex-direction: column; /* Organização vertical do conteúdo */
+    align-items: center;
+    background-color: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+
+.benefit-card h3 {
+    margin-block-end: 0.5rem;
+    color: #007bff;
+}
+
+.benefit-card p {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* 8. Rodapé */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #1a252f;
+    color: #fff;
+    padding: 2.5rem 2rem;
+    max-inline-size: 100%;
+}
+
+.footer-col {
+    flex: 1;
+    padding: 0 1rem;
+}
+
+.footer-col h3 {
+    margin-block-end: 1rem;
+    font-size: 1.1rem;
+}
+
+.footer-col p, .footer-col ul {
+    font-size: 0.9rem;
+    color: #bdc3c7;
+}
+
+.footer-col ul {
+    list-style: none;
+}
+
+.footer-col ul li {
+    margin-block-end: 0.5rem;
+}
+
+
+/* ==========================================================================
+   12. QUESTÕES PARA RESPONDER (Respostas do questionário)
+   ========================================================================== */
+
+/*
+1. Qual é a função do display: flex?
+R: Ativa o modelo de layout Flexible Box (Flexbox) no elemento pai (container),
+transformando seus filhos diretos em flex-items. Isso facilita o alinhamento,
+distribuição e organização espacial dos elementos na tela de forma dinâmica.
+
+2. Qual é a diferença entre flex-direction: row e flex-direction: column?
+R: O flex-direction: row alinha os itens na horizontal (em linha, da esquerda para a direita).
+Já o flex-direction: column alinha os itens na vertical (em coluna, de cima para baixo).
+
+3. Para que serve justify-content?
+R: Serve para alinhar e distribuir os itens ao longo do eixo principal (main axis) do container
+Flexbox (na horizontal quando flex-direction é row, ou na vertical quando é column).
+
+4. Para que serve align-items?
+R: Serve para alinhar os itens ao longo do eixo cruzado (cross axis), que é perpendicular ao eixo principal
+(na vertical quando flex-direction é row, ou na horizontal quando é column).
+
+5. Qual é a função do flex-wrap: wrap?
+R: Permite que os itens do Flexbox quebrem para a linha seguinte quando o espaço do container não for
+suficiente para acomodar todos os elementos em uma única linha.
+
+6. Qual é a diferença entre gap e margin?
+R: O 'gap' define o espaçamento diretamente entre os itens de um container Flexbox/Grid sem adicionar espaço
+nas bordas externas. A 'margin' adiciona espaçamento em volta de um elemento individual (externo a ele),
+podendo afetar elementos vizinhos ou a borda do container pai.
+
+7. Identifique três elementos da sua página que são containers Flexbox e diga quais elementos eles organizam.
+R: 
+- .header: Organiza a logo, o menu de navegação e o botão "Entrar" na mesma linha.
+- .courses-container: Organiza a lista dos 8 cards de cursos em linhas que quebram conforme a tela.
+- .card-info: Organiza a carga horária e o nível do curso em lados opostos dentro do card.
+*/
